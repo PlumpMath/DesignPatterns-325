@@ -9,6 +9,7 @@ namespace DecoratorPattern
    public abstract class Beverage
    {
       protected string description = "Unknown beverage";
+      
 
       public virtual string getDescription ()
       {
@@ -16,12 +17,14 @@ namespace DecoratorPattern
       }
 
       public abstract double cost ();
+
    }
 
    public abstract class CondimentDecorator : Beverage
    {
      //public abstract string getDescription ();
    }
+
 
    public class Esprresso : Beverage
    {
